@@ -1,0 +1,284 @@
+
+/* Style général de la page */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	color: #000000;
+	transition: background-color 0.3s ease;
+  }
+  
+  h1 {
+	margin: 0;
+	padding: 1rem;
+	text-align: center;
+	background-color: #000000;
+	color: #fff;
+	transition: background-color 0.3s ease;
+  }
+  
+  nav {
+	background-color: #fff;
+	padding: 1rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  nav a {
+	color: #333;
+	text-decoration: none;
+	padding: 1rem;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+	background-color: #f2f2f2;
+	color: #333;
+  }
+  
+  #contenu {
+	margin: 2rem;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  h2 {
+	margin-top: 0;
+  }
+  
+  label {
+	display: block;
+	margin: 1rem 0 0.5rem;
+  }
+  
+  input,
+  textarea {
+	display: block;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+	transition: border-color 0.3s ease;
+  }
+  
+  input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+	background-color: #444;
+  }
+  
+  /* Ajouter des transitions supplémentaires */
+  
+  body,
+  h1,
+  nav,
+  #contenu {
+	transition: all 0.3s ease;
+  }
+  
+  h1:hover,
+  nav:hover,
+  #contenu:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 20px;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.message:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.message h3 {
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.message h4 {
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 5px;
+}
+
+.message p {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.reply-form textarea {
+	width: 100%;
+	height: 80px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+	resize: vertical;
+}
+
+.reply-form input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.reply-form input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+.reply-form input[type="submit"]:focus {
+	outline: none;
+}
+
+.reply-form::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.reply-form .form-group {
+	margin-bottom: 10px;
+}
+
+.reply-form .form-group:last-child {
+	margin-bottom: 0;
+}
+
+.reply-form label {
+	display: block;
+	font-size: 14px;
+	color: #555;
+	margin-bottom: 5px;
+}
+
+.reply-form input[type="text"],
+.reply-form textarea {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.reply-form input[type="text"]:focus,
+.reply-form textarea:focus {
+	outline: none;
+	border-color: #4CAF50;
+}
+
+.user-message {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	border-color: rgb(255, 255, 255);
+}
+
+.other-message {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	border-color: rgb(255, 255, 255);
+}
+
+.user-reply {
+	background-color: rgb(252, 207, 46);
+	color: black;
+	border-color: rgb(252, 207, 46);
+}
+
+.other-reply {
+	background-color: rgb(241, 241, 241);
+	color: rgb(23, 183, 145);
+	border-color: rgb(241, 241, 241);
+}
+
+  
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.favoris-list {
+    list-style: none;
+    padding: 0;
+}
+
+.favori-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.favori-item:hover {
+    background-color: #eaeaea;
+}
+
+.favori-id {
+    font-weight: bold;
+    color: #333;
+}
+
+.favori-name {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.favori-price,
+.favori-size {
+    font-size: 16px;
+    color: #666;
+}
+
+.no-favoris {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 20px;
+    color: #999;
+}
+
+
+
